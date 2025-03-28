@@ -1,0 +1,2074 @@
+@prefix : <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13/> .
+
+<http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#hasSourceClass
+:hasSourceClass rdf:type owl:ObjectProperty ;
+                rdfs:domain [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasSourceClass ;
+                              owl:someValuesFrom :Mapping
+                            ] ;
+                rdfs:range [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasSourceClass ;
+                             owl:someValuesFrom owl:Thing
+                           ] .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#hasTargetClass
+:hasTargetClass rdf:type owl:ObjectProperty ;
+                rdfs:domain [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasTargetClass ;
+                              owl:someValuesFrom :Mapping
+                            ] ;
+                rdfs:range [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasSourceClass ;
+                             owl:someValuesFrom owl:Thing
+                           ] .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#hasWeight
+:hasWeight rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:float .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Accessibility
+:Accessibility rdf:type owl:Class ;
+               rdfs:subClassOf :Universality .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Adaptiveness
+:Adaptiveness rdf:type owl:Class ;
+              rdfs:subClassOf :Flexibility .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Adaptiveness_to_environment
+:Adaptiveness_to_environment rdf:type owl:Class ;
+                             rdfs:subClassOf :Adaptiveness .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Adaptiveness_to_user_preferences
+:Adaptiveness_to_user_preferences rdf:type owl:Class ;
+                                  rdfs:subClassOf :Adaptiveness .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Aesthetic
+:Aesthetic rdf:type owl:Class ;
+           rdfs:subClassOf :Subjective_satisfaction .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Annotations
+:Annotations rdf:type owl:Class ;
+             rdfs:subClassOf :AsyncComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Anonymous_access
+:Anonymous_access rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#StakeholderMan&AccessControl> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#AsyncComm
+:AsyncComm rdf:type owl:Class ;
+           rdfs:subClassOf :Communication .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Audio
+:Audio rdf:type owl:Class ;
+       rdfs:subClassOf :SynchronousComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Authentication_and_authorization_from_corporate_database
+:Authentication_and_authorization_from_corporate_database rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#StakeholderMan&AccessControl> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Automation_of_conflict_resolution
+:Automation_of_conflict_resolution rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Conflict&Consistency> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Call-for-Attention
+:Call-for-Attention rdf:type owl:Class ;
+                    rdfs:subClassOf :AsyncComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Change_review_sessions
+:Change_review_sessions rdf:type owl:Class ;
+                        rdfs:subClassOf :SynchronousComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Chat
+:Chat rdf:type owl:Class ;
+      rdfs:subClassOf :SynchronousComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Clarity
+:Clarity rdf:type owl:Class ;
+         rdfs:subClassOf :Knowability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Clarity_of_elements
+:Clarity_of_elements rdf:type owl:Class ;
+                     rdfs:subClassOf :Clarity .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Clarity_of_functioning
+:Clarity_of_functioning rdf:type owl:Class ;
+                        rdfs:subClassOf :Clarity .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Clarity_of_structure
+:Clarity_of_structure rdf:type owl:Class ;
+                      rdfs:subClassOf :Clarity .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Cloud-based_network_architecture
+:Cloud-based_network_architecture rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Conflict&Consistency> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Code_generation
+:Code_generation rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#ModelManipulation&Query> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Collaboration
+:Collaboration rdf:type owl:Class ;
+               rdfs:subClassOf :collaborativeMDSE .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#CollaborationDynamics
+:CollaborationDynamics rdf:type owl:Class ;
+                       rdfs:subClassOf :Collaboration .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Collaboration_at_the_metamodel_level
+:Collaboration_at_the_metamodel_level rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Model&Languages> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Collaboration_at_the_model_level
+:Collaboration_at_the_model_level rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Model&Languages> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Comments
+:Comments rdf:type owl:Class ;
+          rdfs:subClassOf :AsyncComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Commit_messages
+:Commit_messages rdf:type owl:Class ;
+                 rdfs:subClassOf :AsyncComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Communication
+:Communication rdf:type owl:Class ;
+               rdfs:subClassOf :collaborativeMDSE .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Communication_means_built_into_the_modeling_tools
+:Communication_means_built_into_the_modeling_tools rdf:type owl:Class ;
+                                                   rdfs:subClassOf :Integration .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Communication_means_not_built_into_the_modeling_tools
+:Communication_means_not_built_into_the_modeling_tools rdf:type owl:Class ;
+                                                       rdfs:subClassOf :Integration .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Completeness
+:Completeness rdf:type owl:Class ;
+              rdfs:subClassOf :Operability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Configurability
+:Configurability rdf:type owl:Class ;
+                 rdfs:subClassOf :Controllability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Conflict_awareness_features
+:Conflict_awareness_features rdf:type owl:Class ;
+                             rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Conflict&Consistency> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Conflicts_table
+:Conflicts_table rdf:type owl:Class ;
+                 rdfs:subClassOf :AsyncComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Consistency
+:Consistency rdf:type owl:Class ;
+             rdfs:subClassOf :Knowability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Consistency_in_functioning
+:Consistency_in_functioning rdf:type owl:Class ;
+                            rdfs:subClassOf :Consistency .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Consistency_of_elements
+:Consistency_of_elements rdf:type owl:Class ;
+                         rdfs:subClassOf :Consistency .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Consistency_of_structure
+:Consistency_of_structure rdf:type owl:Class ;
+                          rdfs:subClassOf :Consistency .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Controllability
+:Controllability rdf:type owl:Class ;
+                 rdfs:subClassOf :Flexibility .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Cultural_universality
+:Cultural_universality rdf:type owl:Class ;
+                       rdfs:subClassOf :Universality .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Database_integration
+:Database_integration rdf:type owl:Class ;
+                      rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#ModelManipulation&Query> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Desktop-based_modeling_environments
+:Desktop-based_modeling_environments rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Editors&ModelEnvironment> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Editors_supporting_multiple_types_of_notations
+:Editors_supporting_multiple_types_of_notations rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Editors&ModelEnvironment> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Efficiency
+:Efficiency rdf:type owl:Class ;
+            rdfs:subClassOf :Usability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Efficiency_in_economic_costs
+:Efficiency_in_economic_costs rdf:type owl:Class ;
+                              rdfs:subClassOf :Efficiency .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Efficiency_in_human_effort
+:Efficiency_in_human_effort rdf:type owl:Class ;
+                            rdfs:subClassOf :Efficiency .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Efficiency_in_task_execution_time
+:Efficiency_in_task_execution_time rdf:type owl:Class ;
+                                   rdfs:subClassOf :Efficiency .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Efficiency_in_tied_up_resources
+:Efficiency_in_tied_up_resources rdf:type owl:Class ;
+                                 rdfs:subClassOf :Efficiency .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Email
+:Email rdf:type owl:Class ;
+       rdfs:subClassOf :AsyncComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Environment_safety
+:Environment_safety rdf:type owl:Class ;
+                    rdfs:subClassOf :Safety .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Eventual_consistency
+:Eventual_consistency rdf:type owl:Class ;
+                      rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Conflict&Consistency> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#External_version_control
+:External_version_control rdf:type owl:Class ;
+                          rdfs:subClassOf :Versioning .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Face-to-face
+:Face-to-face rdf:type owl:Class ;
+              rdfs:subClassOf :SynchronousComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Failure_recovery
+:Failure_recovery rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Conflict&Consistency> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Feedback
+:Feedback rdf:type owl:Class ;
+          rdfs:subClassOf :AsyncComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Flexibility
+:Flexibility rdf:type owl:Class ;
+             rdfs:subClassOf :Operability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Formal_configurability
+:Formal_configurability rdf:type owl:Class ;
+                        rdfs:subClassOf :Configurability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Forum
+:Forum rdf:type owl:Class ;
+       rdfs:subClassOf :AsyncComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Freedom_in_tasks
+:Freedom_in_tasks rdf:type owl:Class ;
+                  rdfs:subClassOf :Workflow_controllability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Hand_gestures
+:Hand_gestures rdf:type owl:Class ;
+               rdfs:subClassOf :SynchronousComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Helpfulness
+:Helpfulness rdf:type owl:Class ;
+             rdfs:subClassOf :Knowability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#History
+:History rdf:type owl:Class ;
+         rdfs:subClassOf :Versioning .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Human-machine_collaboration
+:Human-machine_collaboration rdf:type owl:Class ;
+                             rdfs:subClassOf :CollaborationDynamics .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Import_of_an_external_language_into_the_modeling_environment
+:Import_of_an_external_language_into_the_modeling_environment rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Model&Languages> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Integrated_professional-social_networking
+:Integrated_professional-social_networking rdf:type owl:Class ;
+                                           rdfs:subClassOf :AsyncComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Integration
+:Integration rdf:type owl:Class ;
+             rdfs:subClassOf :Communication .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Interactivity_of_assistance
+:Interactivity_of_assistance rdf:type owl:Class ;
+                             rdfs:subClassOf :Helpfulness .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Interest
+:Interest rdf:type owl:Class ;
+          rdfs:subClassOf :Subjective_satisfaction .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Internal_versioning_support
+:Internal_versioning_support rdf:type owl:Class ;
+                             rdfs:subClassOf :Versioning .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Knowability
+:Knowability rdf:type owl:Class ;
+             rdfs:subClassOf :Usability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Legal_safeguarding_of_third_parties
+:Legal_safeguarding_of_third_parties rdf:type owl:Class ;
+                                     rdfs:subClassOf :Third_party_safety .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Legal_safeguarding_of_user
+:Legal_safeguarding_of_user rdf:type owl:Class ;
+                            rdfs:subClassOf :User_safety .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Locking
+:Locking rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Conflict&Consistency> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Manual_conflict_resolution
+:Manual_conflict_resolution rdf:type owl:Class ;
+                            rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Conflict&Consistency> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Mapping
+:Mapping rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Memorability
+:Memorability rdf:type owl:Class ;
+              rdfs:subClassOf :Knowability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Memorability_of_elements
+:Memorability_of_elements rdf:type owl:Class ;
+                          rdfs:subClassOf :Memorability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Memorability_of_functioning
+:Memorability_of_functioning rdf:type owl:Class ;
+                             rdfs:subClassOf :Memorability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Memorability_of_structure
+:Memorability_of_structure rdf:type owl:Class ;
+                           rdfs:subClassOf :Memorability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Metrics_of_model_complexity
+:Metrics_of_model_complexity rdf:type owl:Class ;
+                             rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#ModelManipulation&Query> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Mobile_device_based_modeling_environments
+:Mobile_device_based_modeling_environments rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Editors&ModelEnvironment> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#ModelManagement
+:ModelManagement rdf:type owl:Class ;
+                 rdfs:subClassOf :collaborativeMDSE .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Model_debugging
+:Model_debugging rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#ModelManipulation&Query> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Model_differencing
+:Model_differencing rdf:type owl:Class ;
+                    rdfs:subClassOf :Versioning .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Model_differencing_based_on_modeling_languages
+:Model_differencing_based_on_modeling_languages rdf:type owl:Class ;
+                                                rdfs:subClassOf :Versioning .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Model_execution
+:Model_execution rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#ModelManipulation&Query> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Model_merging
+:Model_merging rdf:type owl:Class ;
+               rdfs:subClassOf :Versioning .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Model_testing_by_defining_the_test_cases_in_the_models
+:Model_testing_by_defining_the_test_cases_in_the_models rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#ModelManipulation&Query> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Model_transformation
+:Model_transformation rdf:type owl:Class ;
+                      rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#ModelManipulation&Query> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Model_validation
+:Model_validation rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#ModelManipulation&Query> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Multi-view_modeling
+:Multi-view_modeling rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Model&Languages> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Multimedia_annotations
+:Multimedia_annotations rdf:type owl:Class ;
+                        rdfs:subClassOf :AsyncComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Natural_Language_Processing
+:Natural_Language_Processing rdf:type owl:Class ;
+                             rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#ModelManipulation&Query> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Offline_collaboration
+:Offline_collaboration rdf:type owl:Class ;
+                       rdfs:subClassOf :CollaborationDynamics .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Operability
+:Operability rdf:type owl:Class ;
+             rdfs:subClassOf :Usability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#P2P_network_architecture
+:P2P_network_architecture rdf:type owl:Class ;
+                          rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Conflict&Consistency> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Precision
+:Precision rdf:type owl:Class ;
+           rdfs:subClassOf :Operability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Prevention_of_conflicts
+:Prevention_of_conflicts rdf:type owl:Class ;
+                         rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Conflict&Consistency> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Projectional_editors
+:Projectional_editors rdf:type owl:Class ;
+                      rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Editors&ModelEnvironment> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Proposals
+:Proposals rdf:type owl:Class ;
+           rdfs:subClassOf :AsyncComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Push_notifications_on_conflicts
+:Push_notifications_on_conflicts rdf:type owl:Class ;
+                                 rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Conflict&Consistency> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Real-time_collaboration
+:Real-time_collaboration rdf:type owl:Class ;
+                         rdfs:subClassOf :CollaborationDynamics .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Reversibility
+:Reversibility rdf:type owl:Class ;
+               rdfs:subClassOf :Workflow_controllability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Reviews
+:Reviews rdf:type owl:Class ;
+         rdfs:subClassOf :AsyncComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Robustness
+:Robustness rdf:type owl:Class ;
+            rdfs:subClassOf :Usability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Robustness_to_environment_problems
+:Robustness_to_environment_problems rdf:type owl:Class ;
+                                    rdfs:subClassOf :Robustness .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Robustness_to_improper_use
+:Robustness_to_improper_use rdf:type owl:Class ;
+                            rdfs:subClassOf :Robustness .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Robustness_to_internal_error
+:Robustness_to_internal_error rdf:type owl:Class ;
+                              rdfs:subClassOf :Robustness .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Robustness_to_third_party_abuse
+:Robustness_to_third_party_abuse rdf:type owl:Class ;
+                                 rdfs:subClassOf :Robustness .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Role-based_access_control
+:Role-based_access_control rdf:type owl:Class ;
+                           rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#StakeholderMan&AccessControl> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Round-trip_engineering
+:Round-trip_engineering rdf:type owl:Class ;
+                        rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#ModelManipulation&Query> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Safety
+:Safety rdf:type owl:Class ;
+        rdfs:subClassOf :Usability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Safety_of_third_party_assets
+:Safety_of_third_party_assets rdf:type owl:Class ;
+                              rdfs:subClassOf :Third_party_safety .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Safety_of_user_assets
+:Safety_of_user_assets rdf:type owl:Class ;
+                       rdfs:subClassOf :User_safety .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Screen_sharing
+:Screen_sharing rdf:type owl:Class ;
+                rdfs:subClassOf :SynchronousComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Sketch-based_editors
+:Sketch-based_editors rdf:type owl:Class ;
+                      rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Editors&ModelEnvironment> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Sticky_notes
+:Sticky_notes rdf:type owl:Class ;
+              rdfs:subClassOf :AsyncComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Subjective_satisfaction
+:Subjective_satisfaction rdf:type owl:Class ;
+                         rdfs:subClassOf :Usability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Suitability_of_documentation_content
+:Suitability_of_documentation_content rdf:type owl:Class ;
+                                      rdfs:subClassOf :Helpfulness .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#SynchronousComm
+:SynchronousComm rdf:type owl:Class ;
+                 rdfs:subClassOf :Communication .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Tabular_editors
+:Tabular_editors rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Editors&ModelEnvironment> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Tags
+:Tags rdf:type owl:Class ;
+      rdfs:subClassOf :AsyncComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Technical_configurability
+:Technical_configurability rdf:type owl:Class ;
+                           rdfs:subClassOf :Configurability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Textual_editors
+:Textual_editors rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Editors&ModelEnvironment> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Third_party_confidentiality
+:Third_party_confidentiality rdf:type owl:Class ;
+                             rdfs:subClassOf :Third_party_safety .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Third_party_physical_safety
+:Third_party_physical_safety rdf:type owl:Class ;
+                             rdfs:subClassOf :Third_party_safety .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Third_party_safety
+:Third_party_safety rdf:type owl:Class ;
+                    rdfs:subClassOf :Safety .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Tree-based_editors
+:Tree-based_editors rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Editors&ModelEnvironment> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Undo-redo_support_during_collaboration
+:Undo-redo_support_during_collaboration rdf:type owl:Class ;
+                                        rdfs:subClassOf :Versioning .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Universality
+:Universality rdf:type owl:Class ;
+              rdfs:subClassOf :Operability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Usability
+:Usability rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Use_of_domain-specific_languages
+:Use_of_domain-specific_languages rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Model&Languages> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Use_of_general-purpose_modeling_languages
+:Use_of_general-purpose_modeling_languages rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Model&Languages> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#User_confidentiality
+:User_confidentiality rdf:type owl:Class ;
+                      rdfs:subClassOf :User_safety .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#User_identification
+:User_identification rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#StakeholderMan&AccessControl> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#User_physical_safety
+:User_physical_safety rdf:type owl:Class ;
+                      rdfs:subClassOf :User_safety .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#User_presence_visualization
+:User_presence_visualization rdf:type owl:Class ;
+                             rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#StakeholderMan&AccessControl> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#User_safety
+:User_safety rdf:type owl:Class ;
+             rdfs:subClassOf :Safety .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Version_branching
+:Version_branching rdf:type owl:Class ;
+                   rdfs:subClassOf :Versioning .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Versioning
+:Versioning rdf:type owl:Class ;
+            rdfs:subClassOf :Collaboration .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Visual_editors
+:Visual_editors rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Editors&ModelEnvironment> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Voice
+:Voice rdf:type owl:Class ;
+       rdfs:subClassOf :SynchronousComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Voting
+:Voting rdf:type owl:Class ;
+        rdfs:subClassOf :AsyncComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Web-based_modeling_environments
+:Web-based_modeling_environments rdf:type owl:Class ;
+                                 rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Editors&ModelEnvironment> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Wiki
+:Wiki rdf:type owl:Class ;
+      rdfs:subClassOf :AsyncComm .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Workflow_controllability
+:Workflow_controllability rdf:type owl:Class ;
+                          rdfs:subClassOf :Controllability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#acoustic
+:acoustic rdf:type owl:Class ;
+          rdfs:subClassOf :Formal_configurability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#auditory
+:auditory rdf:type owl:Class ;
+          rdfs:subClassOf :Accessibility .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#cognitive
+:cognitive rdf:type owl:Class ;
+           rdfs:subClassOf :Accessibility .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#collaborativeMDSE
+:collaborativeMDSE rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#conceptual
+:conceptual rdf:type owl:Class ;
+            rdfs:subClassOf :Memorability_of_structure .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#consumables
+:consumables rdf:type owl:Class ;
+             rdfs:subClassOf :Efficiency_in_economic_costs .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#cultural_conventions
+:cultural_conventions rdf:type owl:Class ;
+                      rdfs:subClassOf :Cultural_universality .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#definitions
+:definitions rdf:type owl:Class ;
+             rdfs:subClassOf :Suitability_of_documentation_content .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#descriptions
+:descriptions rdf:type owl:Class ;
+              rdfs:subClassOf :Suitability_of_documentation_content .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#equipment
+:equipment rdf:type owl:Class ;
+           rdfs:subClassOf :Efficiency_in_economic_costs .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#examples
+:examples rdf:type owl:Class ;
+          rdfs:subClassOf :Suitability_of_documentation_content .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#formal
+:formal rdf:type owl:Class ;
+        rdfs:subClassOf :Memorability_of_structure .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#gustatory
+:gustatory rdf:type owl:Class ;
+           rdfs:subClassOf :Formal_configurability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#human
+:human rdf:type owl:Class ;
+       rdfs:subClassOf :Efficiency_in_tied_up_resources .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#human_resources
+:human_resources rdf:type owl:Class ;
+                 rdfs:subClassOf :Efficiency_in_economic_costs .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#language
+:language rdf:type owl:Class ;
+          rdfs:subClassOf :Cultural_universality .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#material
+:material rdf:type owl:Class ;
+          rdfs:subClassOf :Efficiency_in_tied_up_resources .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mental
+:mental rdf:type owl:Class ;
+        rdfs:subClassOf :Efficiency_in_human_effort .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#motor
+:motor rdf:type owl:Class ;
+       rdfs:subClassOf :Accessibility .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#olfactory
+:olfactory rdf:type owl:Class ;
+           rdfs:subClassOf :Formal_configurability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#physical
+:physical rdf:type owl:Class ;
+          rdfs:subClassOf :Efficiency_in_human_effort .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#system
+:system rdf:type owl:Class ;
+        rdfs:subClassOf :Efficiency_in_economic_costs .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#system_response
+:system_response rdf:type owl:Class ;
+                 rdfs:subClassOf :Efficiency_in_task_execution_time .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#system_tasks
+:system_tasks rdf:type owl:Class ;
+              rdfs:subClassOf :Memorability_of_functioning .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#tactile
+:tactile rdf:type owl:Class ;
+         rdfs:subClassOf :Formal_configurability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#user
+:user rdf:type owl:Class ;
+      rdfs:subClassOf :Efficiency_in_task_execution_time .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#user_tasks
+:user_tasks rdf:type owl:Class ;
+            rdfs:subClassOf :Memorability_of_functioning .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#visual
+:visual rdf:type owl:Class ;
+        rdfs:subClassOf :Accessibility .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Conflict&Consistency
+<http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Conflict&Consistency> rdf:type owl:Class ;
+                                                                                                     rdfs:subClassOf :Collaboration .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Editors&ModelEnvironment
+<http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Editors&ModelEnvironment> rdf:type owl:Class ;
+                                                                                                         rdfs:subClassOf :ModelManagement .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Integration_with_build/DevOps_tools
+<http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Integration_with_build/DevOps_tools> rdf:type owl:Class ;
+                                                                                                                    rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#ModelManipulation&Query> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Lazy_loading_of_the_models/workspace
+<http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Lazy_loading_of_the_models/workspace> rdf:type owl:Class ;
+                                                                                                                     rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#ModelManipulation&Query> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Metrics_of_degree_of_conflict/inconsistency
+<http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Metrics_of_degree_of_conflict/inconsistency> rdf:type owl:Class ;
+                                                                                                                            rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Conflict&Consistency> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Model&Languages
+<http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Model&Languages> rdf:type owl:Class ;
+                                                                                                rdfs:subClassOf :ModelManagement .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#ModelManipulation&Query
+<http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#ModelManipulation&Query> rdf:type owl:Class ;
+                                                                                                        rdfs:subClassOf :ModelManagement .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Model_browsing/searching
+<http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Model_browsing/searching> rdf:type owl:Class ;
+                                                                                                         rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#ModelManipulation&Query> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Network_architecture_&_robustness
+<http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Network_architecture_&_robustness> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Conflict&Consistency> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#StakeholderMan&AccessControl
+<http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#StakeholderMan&AccessControl> rdf:type owl:Class ;
+                                                                                                             rdfs:subClassOf :Collaboration .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#acoustic
+:acoustic rdf:type owl:NamedIndividual ,
+                   :acoustic .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#adaptiveness-to-env
+:adaptiveness-to-env rdf:type owl:NamedIndividual ,
+                              :Adaptiveness_to_environment .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#adaptiveness-to-user-preferences
+:adaptiveness-to-user-preferences rdf:type owl:NamedIndividual ,
+                                           :Adaptiveness_to_user_preferences .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#aesthetic
+:aesthetic rdf:type owl:NamedIndividual ,
+                    :Aesthetic .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#annotation
+:annotation rdf:type owl:NamedIndividual ,
+                     :Annotations .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#anon-access
+:anon-access rdf:type owl:NamedIndividual ,
+                      :Anonymous_access .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#audio
+:audio rdf:type owl:NamedIndividual ,
+                :Audio .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#auditory
+:auditory rdf:type owl:NamedIndividual ,
+                   :auditory .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#authen-author-corpor-database
+:authen-author-corpor-database rdf:type owl:NamedIndividual ,
+                                        :Authentication_and_authorization_from_corporate_database .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#auto-conflict-resolution
+:auto-conflict-resolution rdf:type owl:NamedIndividual ,
+                                   :Automation_of_conflict_resolution .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#call-for-attention
+:call-for-attention rdf:type owl:NamedIndividual ,
+                             :Call-for-Attention .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#change-review-sesh
+:change-review-sesh rdf:type owl:NamedIndividual ,
+                             :Change_review_sessions .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#chat
+:chat rdf:type owl:NamedIndividual ,
+               :Chat .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#clarity-of-elements
+:clarity-of-elements rdf:type owl:NamedIndividual ,
+                              :Clarity_of_elements .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#clarity-of-functioning
+:clarity-of-functioning rdf:type owl:NamedIndividual ,
+                                 :Clarity_of_functioning .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#clarity-of-structure
+:clarity-of-structure rdf:type owl:NamedIndividual ,
+                               :Clarity_of_structure .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#cloud-based-network-arch
+:cloud-based-network-arch rdf:type owl:NamedIndividual ,
+                                   :Cloud-based_network_architecture .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#code-gen
+:code-gen rdf:type owl:NamedIndividual ,
+                   :Code_generation .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#cognitive
+:cognitive rdf:type owl:NamedIndividual ,
+                    :cognitive .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#collab-at-metamodel
+:collab-at-metamodel rdf:type owl:NamedIndividual ,
+                              :Collaboration_at_the_metamodel_level .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#collab-at-model
+:collab-at-model rdf:type owl:NamedIndividual ,
+                          :Collaboration_at_the_model_level .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#comm-built-into-modeling-tool
+:comm-built-into-modeling-tool rdf:type owl:NamedIndividual ,
+                                        :Communication_means_built_into_the_modeling_tools .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#comm-not-built-into-modeling-tool
+:comm-not-built-into-modeling-tool rdf:type owl:NamedIndividual ,
+                                            :Communication_means_not_built_into_the_modeling_tools .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#comments
+:comments rdf:type owl:NamedIndividual ,
+                   :Comments .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#commit-message
+:commit-message rdf:type owl:NamedIndividual ,
+                         :Commit_messages .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#completeness
+:completeness rdf:type owl:NamedIndividual ,
+                       :Completeness .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#conceptual
+:conceptual rdf:type owl:NamedIndividual ,
+                     :conceptual .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#conflict-awareness-feat
+:conflict-awareness-feat rdf:type owl:NamedIndividual ,
+                                  :Conflict_awareness_features .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#conflict-table
+:conflict-table rdf:type owl:NamedIndividual ,
+                         :Conflicts_table .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#consis-in-functioning
+:consis-in-functioning rdf:type owl:NamedIndividual ,
+                                :Consistency_in_functioning .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#consis-of-elements
+:consis-of-elements rdf:type owl:NamedIndividual ,
+                             :Consistency_of_elements .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#consis-of-structure
+:consis-of-structure rdf:type owl:NamedIndividual ,
+                              :Consistency_of_structure .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#consumables
+:consumables rdf:type owl:NamedIndividual ,
+                      :consumables .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#cultural-conventions
+:cultural-conventions rdf:type owl:NamedIndividual ,
+                               :cultural_conventions .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#database-int
+:database-int rdf:type owl:NamedIndividual ,
+                       :Database_integration .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#definitions
+:definitions rdf:type owl:NamedIndividual ,
+                      :definitions .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#descriptions
+:descriptions rdf:type owl:NamedIndividual ,
+                       :descriptions .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#desktop-based-modeling-env
+:desktop-based-modeling-env rdf:type owl:NamedIndividual ,
+                                     :Desktop-based_modeling_environments .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#editor-support-multiple-types-of-notation
+:editor-support-multiple-types-of-notation rdf:type owl:NamedIndividual ,
+                                                    :Editors_supporting_multiple_types_of_notations .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#email
+:email rdf:type owl:NamedIndividual ,
+                :Email .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#env-safety
+:env-safety rdf:type owl:NamedIndividual ,
+                     :Environment_safety .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#equipment
+:equipment rdf:type owl:NamedIndividual ,
+                    :equipment .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#eventual-consistency
+:eventual-consistency rdf:type owl:NamedIndividual ,
+                               :Eventual_consistency .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#examples
+:examples rdf:type owl:NamedIndividual ,
+                   :examples .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#external-version-control
+:external-version-control rdf:type owl:NamedIndividual ,
+                                   :External_version_control .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#face-to-face
+:face-to-face rdf:type owl:NamedIndividual ,
+                       :Face-to-face .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#fail-recovery
+:fail-recovery rdf:type owl:NamedIndividual ,
+                        :Failure_recovery .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#feedback
+:feedback rdf:type owl:NamedIndividual ,
+                   :Feedback .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#formal
+:formal rdf:type owl:NamedIndividual ,
+                 :formal .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#formal-configurability
+:formal-configurability rdf:type owl:NamedIndividual ,
+                                 :Formal_configurability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#forum
+:forum rdf:type owl:NamedIndividual ,
+                :Forum .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#freedom-in-tasks
+:freedom-in-tasks rdf:type owl:NamedIndividual ,
+                           :Freedom_in_tasks .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#gustatory
+:gustatory rdf:type owl:NamedIndividual ,
+                    :gustatory .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#hand-gestures
+:hand-gestures rdf:type owl:NamedIndividual ,
+                        :Hand_gestures .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#history
+:history rdf:type owl:NamedIndividual ,
+                  :Internal_versioning_support .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#human
+:human rdf:type owl:NamedIndividual ,
+                :human .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#human-mach-collab
+:human-mach-collab rdf:type owl:NamedIndividual ,
+                            :Human-machine_collaboration ;
+                   :hasSourceClass :human-mach-collab ;
+                   :hasTargetClass :examples ;
+                   :hasWeight "0.01"^^xsd:float ,
+                              "0.12"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#human-resources
+:human-resources rdf:type owl:NamedIndividual ,
+                          :human_resources .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#import-of-external-lang-in-modeling-env
+:import-of-external-lang-in-modeling-env rdf:type owl:NamedIndividual ,
+                                                  :Import_of_an_external_language_into_the_modeling_environment .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#int-professional-social-network
+:int-professional-social-network rdf:type owl:NamedIndividual ,
+                                          :Integrated_professional-social_networking .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#interact-of-assistance
+:interact-of-assistance rdf:type owl:NamedIndividual ,
+                                 :Interactivity_of_assistance .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#interest
+:interest rdf:type owl:NamedIndividual ,
+                   :Interest .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#language
+:language rdf:type owl:NamedIndividual ,
+                   :language .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#lazy-load-model-workspace
+:lazy-load-model-workspace rdf:type owl:NamedIndividual ,
+                                    <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Lazy_loading_of_the_models/workspace> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#legal-safeguarding-of-thirdparty
+:legal-safeguarding-of-thirdparty rdf:type owl:NamedIndividual ,
+                                           :Legal_safeguarding_of_third_parties .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#legal-safeguarding-of-user
+:legal-safeguarding-of-user rdf:type owl:NamedIndividual ,
+                                     :Legal_safeguarding_of_user .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#locking
+:locking rdf:type owl:NamedIndividual ,
+                  :Locking .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#man-conflict-resolution
+:man-conflict-resolution rdf:type owl:NamedIndividual ,
+                                  :Manual_conflict_resolution .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping1
+:mapping1 rdf:type owl:NamedIndividual ,
+                   :Mapping ;
+          :hasSourceClass :anon-access ;
+          :hasTargetClass :sys-response ;
+          :hasWeight "0.8"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping10
+:mapping10 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :user-physical-safety ;
+           :hasTargetClass :prev-conflict ;
+           :hasWeight "0.89"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping11
+:mapping11 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :conflict-awareness-feat ;
+           :hasTargetClass :user-physical-safety ;
+           :hasWeight "0.79"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping12
+:mapping12 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :consumables ;
+           :hasWeight "0.23"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping13
+:mapping13 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :equipment ;
+           :hasWeight "0.67"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping14
+:mapping14 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :human-resources ;
+           :hasWeight "0.74"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping15
+:mapping15 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :system ;
+           :hasWeight "0.81"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping16
+:mapping16 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :mental ;
+           :hasWeight "0.33"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping17
+:mapping17 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :physical ;
+           :hasWeight "0.87"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping18
+:mapping18 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :sys-response ;
+           :hasWeight "0.89"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping19
+:mapping19 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :user ;
+           :hasWeight "0.9"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping2
+:mapping2 rdf:type owl:NamedIndividual ,
+                   :Mapping ;
+          :hasSourceClass :anon-access ;
+          :hasTargetClass :human ;
+          :hasWeight "0.9"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping20
+:mapping20 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :human ;
+           :hasWeight "0.95"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping21
+:mapping21 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :material ;
+           :hasWeight "0.21"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping22
+:mapping22 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :conceptual ;
+           :hasWeight "0.11"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping23
+:mapping23 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :formal ;
+           :hasWeight "0.1"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping24
+:mapping24 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :sys-tasks ;
+           :hasWeight "0.78"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping25
+:mapping25 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :user-tasks ;
+           :hasWeight "0.78"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping26
+:mapping26 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :conceptual ;
+           :hasWeight "0.16"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping27
+:mapping27 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :interact-of-assistance ;
+           :hasWeight "0.79"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping28
+:mapping28 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :definitions ;
+           :hasWeight "0.14"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping29
+:mapping29 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :descriptions ;
+           :hasWeight "0.31"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping3
+:mapping3 rdf:type owl:NamedIndividual ,
+                   :Mapping ;
+          :hasSourceClass :real-time-collaboration ;
+          :hasWeight "0.7"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping30
+:mapping30 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :completeness ;
+           :hasWeight "0.2"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping31
+:mapping31 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :adaptiveness-to-env ;
+           :hasWeight "0.38"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping32
+:mapping32 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :adaptiveness-to-user-preferences ;
+           :hasWeight "0.22"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping33
+:mapping33 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :acoustic ;
+           :hasWeight "0.18"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping34
+:mapping34 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :gustatory ;
+           :hasWeight "0.13"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping35
+:mapping35 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :olfactory ;
+           :hasWeight "0.1"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping36
+:mapping36 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :tactile ;
+           :hasWeight "0.19"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping37
+:mapping37 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :visual ;
+           :hasWeight "0.2"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping38
+:mapping38 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :technical-configurability ;
+           :hasWeight "0.38"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping39
+:mapping39 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :freedom-in-tasks ;
+           :hasWeight "0.27"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping4
+:mapping4 rdf:type owl:NamedIndividual ,
+                   :Mapping ;
+          :hasSourceClass :offline-collaboration ;
+          :hasWeight "0.76"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping40
+:mapping40 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :reversibility ;
+           :hasWeight "0.24"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping41
+:mapping41 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :precision ;
+           :hasWeight "0.31"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping42
+:mapping42 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :auditory ;
+           :hasWeight "0.01"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping43
+:mapping43 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :cognitive ;
+           :hasWeight "0.2"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping44
+:mapping44 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :motor ;
+           :hasWeight "0.3"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping45
+:mapping45 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :visual ;
+           :hasWeight "0.41"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping46
+:mapping46 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :cultural-conventions ;
+           :hasWeight "0.01"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping47
+:mapping47 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :language ;
+           :hasWeight "0.09"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping48
+:mapping48 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :robustness-to-env-problems ;
+           :hasWeight "0.35"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping49
+:mapping49 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :robustness-to-improper-use ;
+           :hasWeight "0.48"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping5
+:mapping5 rdf:type owl:NamedIndividual ,
+                   :Mapping ;
+          :hasSourceClass :human-mach-collab ;
+          :hasWeight "0.9"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping50
+:mapping50 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :robustness-to-internal-error ;
+           :hasWeight "0.48"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping51
+:mapping51 rdf:type owl:NamedIndividual ,
+                    :Mapping ;
+           :hasSourceClass :human-mach-collab ;
+           :hasTargetClass :robustness-to-third-party-abuse ;
+           :hasWeight "0.5"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping6
+:mapping6 rdf:type owl:NamedIndividual ,
+                   :Mapping ;
+          :hasSourceClass :human-mach-collab ;
+          :hasWeight "0.96"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping7
+:mapping7 rdf:type owl:NamedIndividual ,
+                   :Mapping ;
+          :hasSourceClass :offline-collaboration ;
+          :hasWeight "0.9"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping8
+:mapping8 rdf:type owl:NamedIndividual ,
+                   :Mapping ;
+          :hasSourceClass :real-time-collaboration ;
+          :hasWeight "0.99"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mapping9
+:mapping9 rdf:type owl:NamedIndividual ,
+                   :Mapping ;
+          :hasSourceClass :env-safety ;
+          :hasTargetClass :fail-recovery ;
+          :hasWeight "0.73"^^xsd:float .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#material
+:material rdf:type owl:NamedIndividual ,
+                   :material .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#memorability-of-elements
+:memorability-of-elements rdf:type owl:NamedIndividual ,
+                                   :Memorability_of_elements .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mental
+:mental rdf:type owl:NamedIndividual ,
+                 :mental .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#metric-deg-conflict
+:metric-deg-conflict rdf:type owl:NamedIndividual ,
+                              <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Metrics_of_degree_of_conflict/inconsistency> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#metric-model-complexity
+:metric-model-complexity rdf:type owl:NamedIndividual ,
+                                  :Metrics_of_model_complexity .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#mobile-modeling-env
+:mobile-modeling-env rdf:type owl:NamedIndividual ,
+                              :Mobile_device_based_modeling_environments .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#model-browse-search
+:model-browse-search rdf:type owl:NamedIndividual ,
+                              <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Model_browsing/searching> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#model-debugging
+:model-debugging rdf:type owl:NamedIndividual ,
+                          :Model_debugging .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#model-diff
+:model-diff rdf:type owl:NamedIndividual ,
+                     :Model_differencing .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#model-diff-modeling-lang
+:model-diff-modeling-lang rdf:type owl:NamedIndividual ,
+                                   :Model_differencing_based_on_modeling_languages .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#model-exec
+:model-exec rdf:type owl:NamedIndividual ,
+                     :Model_execution .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#model-merging
+:model-merging rdf:type owl:NamedIndividual ,
+                        :Model_merging .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#model-testing-by-test-cases
+:model-testing-by-test-cases rdf:type owl:NamedIndividual ,
+                                      :Model_testing_by_defining_the_test_cases_in_the_models .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#model-transformation
+:model-transformation rdf:type owl:NamedIndividual ,
+                               :Model_transformation .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#model-validation
+:model-validation rdf:type owl:NamedIndividual ,
+                           :Model_validation .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#motor
+:motor rdf:type owl:NamedIndividual ,
+                :motor .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#multi-view-modeling
+:multi-view-modeling rdf:type owl:NamedIndividual ,
+                              :Multi-view_modeling .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#multimedia-annotations
+:multimedia-annotations rdf:type owl:NamedIndividual ,
+                                 :Multimedia_annotations .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#network-arch-robustness
+:network-arch-robustness rdf:type owl:NamedIndividual ,
+                                  <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Network_architecture_&_robustness> .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#nlp
+:nlp rdf:type owl:NamedIndividual ,
+              :Natural_Language_Processing .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#offline-collaboration
+:offline-collaboration rdf:type owl:NamedIndividual ,
+                                :Offline_collaboration .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#olfactory
+:olfactory rdf:type owl:NamedIndividual ,
+                    :olfactory .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#p2p-network-arch
+:p2p-network-arch rdf:type owl:NamedIndividual ,
+                           :P2P_network_architecture .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#physical
+:physical rdf:type owl:NamedIndividual ,
+                   :physical .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#precision
+:precision rdf:type owl:NamedIndividual ,
+                    :Precision .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#prev-conflict
+:prev-conflict rdf:type owl:NamedIndividual ,
+                        :Prevention_of_conflicts .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#projectional-editors
+:projectional-editors rdf:type owl:NamedIndividual ,
+                               :Projectional_editors .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#proposal
+:proposal rdf:type owl:NamedIndividual ,
+                   :Proposals .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#push-notif-conflict
+:push-notif-conflict rdf:type owl:NamedIndividual ,
+                              :Push_notifications_on_conflicts .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#real-time-collaboration
+:real-time-collaboration rdf:type owl:NamedIndividual ,
+                                  :Real-time_collaboration .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#reversibility
+:reversibility rdf:type owl:NamedIndividual ,
+                        :Reversibility .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#review
+:review rdf:type owl:NamedIndividual ,
+                 :Reviews .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#robustness-to-env-problems
+:robustness-to-env-problems rdf:type owl:NamedIndividual ,
+                                     :Robustness_to_environment_problems .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#robustness-to-improper-use
+:robustness-to-improper-use rdf:type owl:NamedIndividual ,
+                                     :Robustness_to_improper_use .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#robustness-to-internal-error
+:robustness-to-internal-error rdf:type owl:NamedIndividual ,
+                                       :Robustness_to_internal_error .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#robustness-to-third-party-abuse
+:robustness-to-third-party-abuse rdf:type owl:NamedIndividual ,
+                                          :Robustness_to_third_party_abuse .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#role-access-control
+:role-access-control rdf:type owl:NamedIndividual ,
+                              :Role-based_access_control .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#round-trip-eng
+:round-trip-eng rdf:type owl:NamedIndividual ,
+                         :Round-trip_engineering .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#safety-of-thirdparty-asset
+:safety-of-thirdparty-asset rdf:type owl:NamedIndividual ,
+                                     :Safety_of_third_party_assets .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#safety-of-user-asset
+:safety-of-user-asset rdf:type owl:NamedIndividual ,
+                               :Safety_of_user_assets .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#screen-sharing
+:screen-sharing rdf:type owl:NamedIndividual ,
+                         :Screen_sharing .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#sketch-based-editors
+:sketch-based-editors rdf:type owl:NamedIndividual ,
+                               :Sketch-based_editors .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#sticky-notes
+:sticky-notes rdf:type owl:NamedIndividual ,
+                       :Sticky_notes .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#suitability-of-documentation-content
+:suitability-of-documentation-content rdf:type owl:NamedIndividual ,
+                                               :Suitability_of_documentation_content .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#sys-response
+:sys-response rdf:type owl:NamedIndividual ,
+                       :system_response .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#sys-tasks
+:sys-tasks rdf:type owl:NamedIndividual ,
+                    :system_tasks .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#system
+:system rdf:type owl:NamedIndividual ,
+                 :system .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#tabular-editors
+:tabular-editors rdf:type owl:NamedIndividual ,
+                          :Tabular_editors .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#tactile
+:tactile rdf:type owl:NamedIndividual ,
+                  :tactile .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#tags
+:tags rdf:type owl:NamedIndividual ,
+               :Tags .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#technical-configurability
+:technical-configurability rdf:type owl:NamedIndividual ,
+                                    :Technical_configurability .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#textual-editors
+:textual-editors rdf:type owl:NamedIndividual ,
+                          :Textual_editors .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#thirdparty-confidentiality
+:thirdparty-confidentiality rdf:type owl:NamedIndividual ,
+                                     :Third_party_confidentiality .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#thirdparty-physical-safety
+:thirdparty-physical-safety rdf:type owl:NamedIndividual ,
+                                     :Third_party_physical_safety .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#tree-editors
+:tree-editors rdf:type owl:NamedIndividual ,
+                       :Tree-based_editors .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#undo-redo-support-collab
+:undo-redo-support-collab rdf:type owl:NamedIndividual ,
+                                   :Undo-redo_support_during_collaboration .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#use-of-dsl
+:use-of-dsl rdf:type owl:NamedIndividual ,
+                     :Use_of_domain-specific_languages .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#use-of-gpml
+:use-of-gpml rdf:type owl:NamedIndividual ,
+                      :Use_of_general-purpose_modeling_languages .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#user
+:user rdf:type owl:NamedIndividual ,
+               :user .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#user-confidentiality
+:user-confidentiality rdf:type owl:NamedIndividual ,
+                               :User_confidentiality .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#user-id
+:user-id rdf:type owl:NamedIndividual ,
+                  :User_identification .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#user-physical-safety
+:user-physical-safety rdf:type owl:NamedIndividual ,
+                               :User_physical_safety .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#user-presence-visual
+:user-presence-visual rdf:type owl:NamedIndividual ,
+                               :User_presence_visualization .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#user-tasks
+:user-tasks rdf:type owl:NamedIndividual ,
+                     :user_tasks .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#version-branching
+:version-branching rdf:type owl:NamedIndividual ,
+                            :Version_branching .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#visual
+:visual rdf:type owl:NamedIndividual ,
+                 :visual .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#visual-editors
+:visual-editors rdf:type owl:NamedIndividual ,
+                         :Visual_editors .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#voice
+:voice rdf:type owl:NamedIndividual ,
+                :Voice .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#voting
+:voting rdf:type owl:NamedIndividual ,
+                 :Voting .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#web-modeling-env
+:web-modeling-env rdf:type owl:NamedIndividual ,
+                           :Web-based_modeling_environments .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#wiki
+:wiki rdf:type owl:NamedIndividual ,
+               :Wiki .
+
+
+###  http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#int-build/DevOps-tools
+<http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#int-build/DevOps-tools> rdf:type owl:NamedIndividual ,
+                                                                                                                <http://www.semanticweb.org/vichekaoeun/ontologies/2025/2/untitled-ontology-13#Integration_with_build/DevOps_tools> .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
